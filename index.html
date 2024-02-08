@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/telefone-tipico-antigo.png" alt="Telefone icone">
+            <h1>Lista Telefonica</h1>
+        </header>
+        <form id="form-registro">
+            <input type="text" id="nomeTel" class="nomeTel" required placeholder="Digite o nome:">
+            <input type="number" id="Telefon" class="telefon" required placeholder="Digite o telefone:">
+            <input type="text" id="relacao" class="relacaoinp" required placeholder="Digite a relação:">
+            <button type="submit" class="adicionar">Adicionar +</button>
+        </form>
+        <table>
+            <thead>
+            </thead>
+            <tbody id="infTable">
+                <tr>
+                    <th id="nome">---</th>
+                    <th id="telefone">---</th>
+                    <th id="relacao">---</th>
+                </tr>
+            </tbody>
+            <tfoot id="indTable">
+                <tr>
+                    <th>Nome:</th>
+                    <th>Telefone:</th>
+                    <th>Relação:</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
